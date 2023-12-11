@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url("base.css");
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    widows: 4;
+    orphans: 4;
+    column-count: 1;
+
+    column-gap: 20px;
+    column-rule: 2px solid #333;
+}
+
+/* Style the header inside the article */
+article h1 {
+    column-span: all;
+    text-align: center;
+}
+
+article p {
+    font-size: 1.5em;
+}
+
+/* Style the unordered list inside the article */
+article ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+/* Style links inside the article */
+article a {
+    color: #007bff;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Add this CSS to the existing styles */
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+        grid-column: 2;
+    }
+
+    article {
+        grid-column: 1;
+        column-count: 2;
+    }
+}

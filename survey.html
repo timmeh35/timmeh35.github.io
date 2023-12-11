@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Survey">
+    <meta name="description" content="Tim's Survey">
+    <meta charset="utf-8" />
+    <link href="css/survey.css" rel="stylesheet" />
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="survey.html">Survey</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+
+</style>
+</head>
+
+<body>
+    <title>Contact Form</title>
+<form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <div id="Gender">
+            <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" >
+                <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <div id="Hobbies">
+            <label>Hobbies:</label>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label>
+
+            <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+            <label for="hobby2">Traveling</label>
+
+            <input type="checkbox" id="hobby3" name="hobbies" value="gaming">
+            <label for="hobby3">Gaming</label>
+        </div>
+
+        <label for="message">Would you be me? Why or why not?:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

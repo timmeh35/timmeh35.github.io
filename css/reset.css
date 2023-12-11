@@ -1,0 +1,5 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
